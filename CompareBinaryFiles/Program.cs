@@ -58,6 +58,7 @@
     private static void CanContinue(ref bool continuar)
     {
         Console.WriteLine("Desea continuar. (S/N)");
-        continuar = (Console.ReadLine().Equals('S') || Console.ReadLine().Equals('s'));
+        var lectura = Console.ReadLine();
+        continuar = (lectura.Equals("S") || lectura.Equals("s"));
     }
 }
